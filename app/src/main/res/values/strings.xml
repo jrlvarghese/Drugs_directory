@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Drugs Directory</string>
+    <string name="empty_view_title_text">No drugs to display.</string>
+    <string name="empty_view_subtitle_text">Use add icon below.</string>
+    <string name="category_overview">Overview</string>
+
+
+    <!-- String variables for drugs category-->
+    <string name="unknown_category">Unknown</string>
+    <string name="tablet_category">Tablet</string>
+    <string name="syrup_category">Syrup</string>
+    <string name="injection_category">Injection</string>
+    <string name="inhalation_category">Inhalation</string>
+    <string name="capsule_category">Capsule</string>
+
+    <!--For the editor activity layout-->
+    <string name="dosage_unit">mg/kg</string>
+    <string name="editor_dosage">Dose per kg</string>
+    <string name="generic_name">Generic name</string>
+    <string name="brand_name">Brand name</string>
+    <string name="drugs_category">Category</string>
+    <string name="editor_available_strengths">Available strengths</string>
+
+    <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+
+    <string name="delete_all_dialog_message">Do you want to delete all entries?</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="unsaved_changes_dialog_msg">Do you want to discard the changes?</string>
+    <string name="discard">Discard</string>
+    <string name="keep_editing">Continue editing the drug..</string>
+
+    <string name="delete_drug_dialog_msg">Do you want to delete this drug?</string>
+
+    <!-- String for the search -->
+    <string name="search_activity_label">Search result</string>
+    <string name="search_title">Search</string>
+    <string name="search_hint">Generic name</string>
+    <string name="empty_view_search_subtitle">Please check the spelling!!</string>
+    <string name="search_result_not_found">NOT FOUND!</string>
+</resources>

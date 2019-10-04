@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Resource array for the drug category drop down-->
+
+    <string-array name="array_drug_category">
+        <item>@string/unknown_category</item>
+        <item>@string/tablet_category</item>
+        <item>@string/syrup_category</item>
+        <item>@string/injection_category</item>
+        <item>@string/inhalation_category</item>
+        <item>@string/capsule_category</item>
+    </string-array>
+</resources>

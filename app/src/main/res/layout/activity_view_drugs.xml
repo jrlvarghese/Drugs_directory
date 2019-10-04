@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".ViewDrugsActivity">
+
+    <!--<android.support.v7.widget.SearchView-->
+        <!--android:id="@+id/search"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:queryHint = "Search by generic"-->
+        <!--android:background="@color/search_background">-->
+        <!--<requestFocus />-->
+    <!--</android.support.v7.widget.SearchView>-->
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="2dp"-->
+        <!--android:background="#757575"-->
+        <!--android:layout_marginRight="12dp"-->
+        <!--android:layout_marginLeft="12dp"-->
+        <!--android:layout_below="@+id/search"/>-->
+
+    <ListView
+        android:id="@+id/drugsList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom = "64dp"
+        android:clipToPadding="false"
+        android:layout_below = "@+id/search"/>
+        <!--android:padding="@dimen/activity_margin"-->
+
+
+    <!-- Empty view for the list -->
+    <RelativeLayout
+        android:id="@+id/empty_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <ImageView
+            android:id="@+id/empty_shelter_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_empty_icon"/>
+        <TextView
+            android:id="@+id/empty_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/empty_shelter_image"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-medium"
+            android:paddingTop="16dp"
+            android:text="@string/empty_view_title_text"
+            android:textAppearance="?android:textAppearanceMedium"/>
+        <TextView
+            android:id="@+id/empty_subtitle_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/empty_title_text"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif"
+            android:paddingTop="8dp"
+            android:text="@string/empty_view_subtitle_text"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#A2AAB0"/>
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_add_drugs"/>
+</RelativeLayout>
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--&lt;!&ndash; Use DrawerLayout as root container for activity &ndash;&gt;-->
+    <!--<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:id="@+id/drawer_layout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:fitsSystemWindows="true"-->
+    <!--tools:context=".ViewDrugsActivity">-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+    <!--<android.support.v7.widget.Toolbar-->
+    <!--android:id="@+id/toolbar"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/action_bar_size"-->
+    <!--android:background="@color/colorPrimary"-->
+    <!--android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/text_view_drug"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_width = "match_parent"/>-->
+    <!--<ListView-->
+    <!--android:id="@+id/drugsList"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:paddingBottom = "64dp"-->
+    <!--android:clipToPadding="false"/>-->
+    <!--&lt;!&ndash;android:padding="@dimen/activity_margin"&ndash;&gt;-->
+
+
+    <!--&lt;!&ndash; Empty view for the list &ndash;&gt;-->
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/empty_view"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true">-->
+    <!--<ImageView-->
+    <!--android:id="@+id/empty_shelter_image"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:src="@drawable/ic_empty_icon"/>-->
+    <!--<TextView-->
+    <!--android:id="@+id/empty_title_text"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/empty_shelter_image"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:fontFamily="sans-serif-medium"-->
+    <!--android:paddingTop="16dp"-->
+    <!--android:text="@string/empty_view_title_text"-->
+    <!--android:textAppearance="?android:textAppearanceMedium"/>-->
+    <!--<TextView-->
+    <!--android:id="@+id/empty_subtitle_text"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/empty_title_text"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:fontFamily="sans-serif"-->
+    <!--android:paddingTop="8dp"-->
+    <!--android:text="@string/empty_view_subtitle_text"-->
+    <!--android:textAppearance="?android:textAppearanceSmall"-->
+    <!--android:textColor="#A2AAB0"/>-->
+    <!--</RelativeLayout>-->
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+    <!--android:id="@+id/fab"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_margin="@dimen/fab_margin"-->
+    <!--android:src="@drawable/ic_add_drugs"/>-->
+    <!--</RelativeLayout>-->
+    <!--&lt;!&ndash; Layout to contain contents of main body of screen (drawer will slide over this) &ndash;&gt;-->
+    <!--&lt;!&ndash;<FrameLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/content_frame"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="match_parent">&ndash;&gt;-->
+    <!--&lt;!&ndash;<android.support.v7.widget.Toolbar&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/toolbar"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="@dimen/action_bar_size"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:background="@color/colorPrimary"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />&ndash;&gt;-->
+
+
+    <!--&lt;!&ndash;</FrameLayout>&ndash;&gt;-->
+
+    <!--&lt;!&ndash; Container for contents of drawer - use NavigationView to make configuration easier &ndash;&gt;-->
+    <!--<android.support.design.widget.NavigationView-->
+    <!--android:id="@+id/nav_view"-->
+    <!--android:layout_width="100dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_gravity="start"-->
+    <!--android:fitsSystemWindows="true"-->
+    <!--app:menu="@menu/drawer_view" />-->
+
+    <!--</android.support.v4.widget.DrawerLayout>-->

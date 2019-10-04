@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="category_tablets">#FD8E09</color>
+    <color name="category_syrups">#379237</color>
+    <color name="category_injections">#8800A0</color>
+    <color name="category_inhalations">#16AFCA</color>
+    <color name="main_activity_background">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="search_background">#cfd8dc</color>
+</resources>
+

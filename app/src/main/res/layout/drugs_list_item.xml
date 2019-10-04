@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout for a single list item in the list of pets -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/generic_name"
+            style = "@style/ListStyle"
+            android:layout_weight="4"
+            android:fontFamily="sans-serif-medium"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#2B3D4D"  />
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#000000"/>
+
+        <TextView
+            android:id="@+id/dosage"
+            style = "@style/ListStyle"
+            android:layout_weight="2"
+            android:fontFamily="sans-serif"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#AEB6BD"  />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id = "@+id/brand_name"
+            style = "@style/ListStyle"
+            android:layout_weight = "4"/>
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#000000"/>
+        <TextView
+            android:id = "@+id/available_dose"
+            style = "@style/ListStyle"
+            android:layout_weight="2" />
+    </LinearLayout>
+
+</LinearLayout>
